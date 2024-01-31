@@ -1,0 +1,9 @@
+.active {
+  background-color: #7950f2;
+  color: white;
+}
+
+.listItem:hover {
+  background-color: #7950f2;
+  color: white;
+}
