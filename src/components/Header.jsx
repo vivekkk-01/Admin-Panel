@@ -6,7 +6,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Header = () => {
   return (
-    <header className="w-full h-32 px-28 flex items-center justify-between">
+    <header className="w-full h-32 px-10 flex items-center justify-between">
       <div className="relative">
         <CiSearch className="absolute top-3.5 left-3" />
         <input
@@ -15,7 +15,7 @@ const Header = () => {
         />
       </div>
       <div className="flex items-center gap-6">
-        <div className="flex items-center gap-4 p-3 px-4 border border-gray-400 rounded-2xl">
+        <div className="flex items-center gap-4 p-3 px-4 border border-gray-400 rounded-xl">
           <span className="flex items-center gap-2">
             <span>11-10-2022</span>
             <FaCalendarAlt className="text-purple" size={13} />
