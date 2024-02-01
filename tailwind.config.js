@@ -19,6 +19,10 @@ module.exports = {
         background: "#F8FAFB",
         grey: "#A0A3BD",
         purple: "#7950F2",
+        published: "#0DAD82",
+        publishedBackground: "#E4FFF8",
+        createdBackground: "#E3D5FF",
+        viewBg: "#E8E9FF"
       },
     },
   },
