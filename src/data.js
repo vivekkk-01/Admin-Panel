@@ -121,3 +121,9 @@ export const stories = [
     status: "Created",
   },
 ];
+
+export const getStory = (storyId) => {
+  const story = stories.find((story) => story.id === storyId);
+  if (!story) return "Not Found!";
+  return story;
+};
