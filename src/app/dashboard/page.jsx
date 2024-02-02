@@ -4,6 +4,7 @@ import classes from "./dashboard.module.css";
 import Summary from "@/components/Summary";
 import Articles from "@/components/Articles";
 import Stories from "@/components/Stories";
+import Advertisements from "@/components/Advertisements";
 
 const Dashboard = () => {
   return (
@@ -21,6 +22,7 @@ const Dashboard = () => {
         <Summary />
         <Articles />
         <Stories />
+        <Advertisements />
       </div>
     </div>
   );
