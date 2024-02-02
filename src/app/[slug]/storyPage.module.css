@@ -1,3 +1,28 @@
 .story_page {
   width: calc(100vw - 18rem);
 }
+
+.story_img_container {
+  height: 35rem;
+}
+
+.story_img {
+  left: 49%;
+  transform: translateX(-50%);
+}
+
+.left_arrow {
+  position: absolute;
+  top: 49%;
+  transform: translateY(-50%);
+  left: 23%;
+  z-index: 40;
+}
+
+.right_arrow {
+  position: absolute;
+  top: 49%;
+  transform: translateY(-50%);
+  right: 25%;
+  z-index: 40;
+}
