@@ -3,6 +3,7 @@ import React from "react";
 import classes from "./dashboard.module.css";
 import Summary from "@/components/Summary";
 import Articles from "@/components/Articles";
+import Stories from "@/components/Stories";
 
 const Dashboard = () => {
   return (
@@ -17,6 +18,7 @@ const Dashboard = () => {
         </div>
         <Summary />
         <Articles />
+        <Stories />
       </div>
     </div>
   );
