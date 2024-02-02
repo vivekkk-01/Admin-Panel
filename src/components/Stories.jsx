@@ -11,6 +11,7 @@ const Stories = () => {
         {stories.map(({ id, title, storyImage, category, date, status }) => (
           <Story
             key={id}
+            id={id}
             title={title}
             storyImage={storyImage}
             category={category}

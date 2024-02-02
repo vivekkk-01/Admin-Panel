@@ -29,7 +29,7 @@ export const articles = [
     date: "20 Sep 2022",
     status: "Created",
     description: "Lorem ipsum dolor sit amet consectetur",
-    tags: ["Branding", "Communication", "Branding"],
+    tags: ["Branding", "Communication"],
     user: {
       username: "Marie Doe",
       picture: "/man.png",
@@ -71,7 +71,7 @@ export const articles = [
     date: "20 Sep 2022",
     status: "Created",
     description: "Lorem ipsum dolor sit amet consectetur",
-    tags: ["Branding", "Communication", "Branding"],
+    tags: ["Branding", "Communication"],
     user: {
       username: "Marie Doe",
       picture: "/man.png",
