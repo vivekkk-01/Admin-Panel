@@ -127,3 +127,24 @@ export const getStory = (storyId) => {
   if (!story) return "Not Found!";
   return story;
 };
+
+export const findId = ({ storyId, direction }) => {
+  if (direction === "left") {
+    const index = stories.findIndex((story) => story.id === storyId);
+    if (index === 0) {
+      const resultedId = stories[stories.length - 1].id;
+      return resultedId;
+    }
+    const resultedId = stories[index - 1].id;
+    return resultedId;
+  }
+  if (direction === "right") {
+    const index = stories.findIndex((story) => story.id === storyId);
+    if (index === stories.length - 1) {
+      const resultedId = stories[0].id;
+      return resultedId;
+    }
+    const resultedId = stories[index + 1].id;
+    return resultedId;
+  }
+};

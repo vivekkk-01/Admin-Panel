@@ -1,15 +1,17 @@
 "use client";
-import { getStory } from "@/data";
+import { findId, getStory } from "@/data";
 import React, { useEffect, useState } from "react";
 import classes from "./storyPage.module.css";
 import Header from "@/components/Header";
 import StoryPageDescription from "@/components/StoryPageDescription";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const StoryPage = ({ params }) => {
   const [story, setStory] = useState(null);
   const storyId = params.slug;
+  const router = useRouter();
 
   useEffect(() => {
     const story = getStory(storyId);
@@ -17,11 +19,13 @@ const StoryPage = ({ params }) => {
   }, [storyId]);
 
   const onLeftClick = () => {
-    console.log("Clicked left!");
+    const resultedId = findId({ storyId, direction: "left" });
+    router.push(`/${resultedId}`);
   };
 
   const onRightClick = () => {
-    console.log("Clicked right!");
+    const resultedId = findId({ storyId, direction: "right" });
+    router.push(`/${resultedId}`);
   };
 
   return (
@@ -40,6 +44,12 @@ const StoryPage = ({ params }) => {
           </div>
           <div className={`absolute top-0 h-full z-40 ${classes.story_img}`}>
             <img src={story?.storyImage} className="h-full" alt="" />
+            <div className="absolute bottom-5 flex flex-col gap-2 items-start mx-3">
+              <h1 className="text-white font-bold text-3xl">{story?.title}</h1>
+              <span className="font-semibold py-2 px-4 bg-viewBg rounded-lg text-purple text-lg">
+                {story?.category}
+              </span>
+            </div>
           </div>
           <div
             onClick={onRightClick}
