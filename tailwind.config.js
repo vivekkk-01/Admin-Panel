@@ -23,7 +23,12 @@ module.exports = {
         published: "#0DAD82",
         publishedBackground: "#E4FFF8",
         createdBackground: "#E3D5FF",
-        viewBg: "#E8E9FF"
+        viewBg: "#E8E9FF",
+      },
+      screens: {
+        desktop: { max: "1200px" },
+        tab: { max: "800px" },
+        mobile: { max: "475px" },
       },
     },
   },
