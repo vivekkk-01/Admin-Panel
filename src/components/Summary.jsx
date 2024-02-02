@@ -15,8 +15,8 @@ const items = [
 
 const Summary = () => {
   return (
-    <div className="w-11/12 tab:w-full overflow-x-hidden">
-      <ul className="flex items-center justify-around mobile:justify-start mobile:gap-3 overflow-x-hidden mobile:overflow-x-scroll mobile:px-4">
+    <div className="w-11/12 tab:w-full overflow-hidden">
+      <ul className="flex items-center justify-around mobile:justify-start mobile:gap-3 overflow-hidden mobile:overflow-x-scroll mobile:px-4">
         {items.map((item) => (
           <li
             key={item.heading}

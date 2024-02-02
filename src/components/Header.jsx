@@ -19,7 +19,7 @@ const Header = ({ storyPage }) => {
         </div>
       )}
       {!storyPage && (
-        <div className="relative">
+        <div className="relative tab:hidden">
           {!isChange && <CiSearch className="absolute top-3.5 left-3" />}
           <input
             type="text"

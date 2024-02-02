@@ -8,7 +8,7 @@ import Advertisements from "@/components/Advertisements";
 
 const Dashboard = () => {
   return (
-    <div className={`h-full ${classes.dashboard}`}>
+    <div className={`h-full overflow-x-hidden ${classes.dashboard}`}>
       <Header />
       <div className="flex flex-col gap-10 overflow-hidden my-5 tab:px-3">
         <div className="flex flex-col gap-3 overflow-hidden">

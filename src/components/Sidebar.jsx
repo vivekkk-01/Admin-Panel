@@ -54,7 +54,7 @@ const Sidebar = () => {
       {(isSizeLess && showSideBar) || (!isSizeLess && !showSideBar) ? (
         <aside
           ref={sideBarRef}
-          className="w-72 desktop:w-40 h-full flex flex-col items-center justify-between pt-10 overflow-hidden sticky left-0 top-0 bg-white tab:fixed"
+          className="w-72 desktop:w-40 h-full flex flex-col items-center justify-between pt-10 overflow-hidden sticky left-0 top-0 tab:bg-white tab:fixed"
           style={{ zIndex: 64 }}
         >
           <ul className="flex flex-col gap-1  overflow-hidden">

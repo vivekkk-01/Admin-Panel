@@ -4,8 +4,8 @@ import { FaEllipsisVertical } from "react-icons/fa6";
 
 const StoryPageDescription = ({ story }) => {
   return (
-    <div className="flex items-center justify-between w-full">
-      <div className="flex items-center gap-2 tab:gap-1 mobile:gap-1.5">
+    <div className="flex items-center justify-between w-full overflow-hidden">
+      <div className="flex items-center gap-2 tab:gap-1 mobile:gap-1.5 overflow-hidden">
         <img
           src={"/man-2.jpg"}
           className="h-9 w-9 desktop:h-7 desktop:w-7 tab:h-5 tab:w-5 object-cover"

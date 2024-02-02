@@ -29,7 +29,7 @@ const StoryPage = ({ params }) => {
   };
 
   return (
-    <div className={`h-full ${classes.story_page}`}>
+    <div className={`h-full overflow-x-hidden ${classes.story_page}`}>
       <Header storyPage={true} />
       <div className="flex flex-col w-full gap-4 overflow-hidden my-5 px-12 desktop:px-6 mobile:px-3">
         <StoryPageDescription story={story} />
