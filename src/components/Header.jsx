@@ -36,7 +36,8 @@ const Header = ({ storyPage }) => {
       )}
       <div
         className={`flex items-center gap-6 ${
-          !storyPage && "tab:w-full tab:gap-0 tab:justify-between"
+          !storyPage &&
+          "tab:w-full tab:gap-0 tab:justify-between mobile:flex-col-reverse mobile:items-center mobile:gap-2"
         }`}
       >
         {!storyPage && (
@@ -52,7 +53,11 @@ const Header = ({ storyPage }) => {
             </span>
           </div>
         )}
-        <div className="flex items-center gap-16 desktop:gap-5 ">
+        <div
+          className={`flex items-center gap-16 desktop:gap-5 ${
+            storyPage && "mobile:hidden"
+          }`}
+        >
           <div className="flex items-center gap-2 desktop:gap-1">
             <img
               className="desktop:w-7 desktop:h-7 object-cover"

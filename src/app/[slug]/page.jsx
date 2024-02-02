@@ -31,27 +31,30 @@ const StoryPage = ({ params }) => {
   return (
     <div className={`h-full ${classes.story_page}`}>
       <Header storyPage={true} />
-      <div className="flex flex-col w-full gap-4 overflow-hidden my-5 px-12 desktop:px-6">
+      <div className="flex flex-col w-full gap-4 overflow-hidden my-5 px-12 desktop:px-6 mobile:px-3">
         <StoryPageDescription story={story} />
         <div className={`w-full relative ${classes.story_img_container}`}>
           <img className="w-full h-full object-cover" src={story?.storyImage} />
           <div className="absolute left-0 top-0 h-full w-full bg-white opacity-20"></div>
+
           <div
-            onClick={onLeftClick}
-            className={`p-3 bg-black rounded-lg opacity-60 cursor-pointer ${classes.left_arrow}`}
+            className={`absolute top-0 mobile:w-10/12 h-full z-40 ${classes.story_img}`}
           >
-            <FaChevronLeft size={30} color="white" />
-          </div>
-          <div className={`absolute top-0 h-full z-40 ${classes.story_img}`}>
             <img src={story?.storyImage} className="h-full" alt="" />
             <div className="absolute bottom-5 flex flex-col gap-2 items-start mx-3">
-              <h1 className="text-white font-bold text-3xl desktop:text-2xl tab:text-xl">
+              <h1 className="text-white font-bold text-3xl desktop:text-2xl tab:text-xl mobile:text-lg">
                 {story?.title}
               </h1>
               <span className="font-semibold py-2 px-4 bg-viewBg rounded-lg tab:rounded-md text-purple text-lg desktop:text-sm tab:text-xs">
                 {story?.category}
               </span>
             </div>
+          </div>
+          <div
+            onClick={onLeftClick}
+            className={`p-3 bg-black rounded-lg opacity-60 cursor-pointer ${classes.left_arrow}`}
+          >
+            <FaChevronLeft size={30} color="white" />
           </div>
           <div
             onClick={onRightClick}

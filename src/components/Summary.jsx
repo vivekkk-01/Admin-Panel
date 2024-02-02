@@ -15,22 +15,22 @@ const items = [
 
 const Summary = () => {
   return (
-    <div className="w-11/12 tab:w-full">
-      <ul className="flex items-center justify-around">
+    <div className="w-11/12 tab:w-full overflow-x-hidden">
+      <ul className="flex items-center justify-around mobile:justify-start mobile:gap-3 overflow-x-hidden mobile:overflow-x-scroll mobile:px-4">
         {items.map((item) => (
           <li
             key={item.heading}
             className="flex items-center gap-5 desktop:gap-2"
           >
             {item.icon && (
-              <item.icon className="text-purple text-4xl desktop:text-2xl tab:text-xl" />
+              <item.icon className="text-purple text-4xl desktop:text-2xl tab:text-xl mobile:text-2xl" />
             )}
             <div className="flex flex-col gap-2 desktop:gap-0.5">
-              <h3 className="font-semibold text-2xl desktop:text-lg tab:text-sm">
+              <h3 className="font-semibold text-2xl desktop:text-lg tab:text-sm mobile:text-lg">
                 {item.heading}
               </h3>
               <span
-                className="text-sm desktop:text-xs
+                className="text-sm desktop:text-xs mobile:text-sm
                font-normal"
               >
                 {item.updates} New Updates

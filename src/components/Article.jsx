@@ -13,14 +13,14 @@ const Article = ({
   tags,
 }) => {
   return (
-    <div className="w-80 desktop:w-72 tab:w-64 flex flex-col gap-2 py-2">
+    <div className="w-80 desktop:w-72 tab:w-64 mobile:w-80 flex flex-col gap-2 py-2">
       <img
         className="w-full object-cover rounded-2xl"
         src={articleImage}
         alt=""
       />
-      <div className="w-full flex items-center justify-between">
-        <div className="flex items-center gap-1 desktop:gap-0.5">
+      <div className="w-full mobile:w-80 flex items-center justify-between">
+        <div className="flex items-center gap-1 desktop:gap-0.5 mobile:gap-1.5">
           <span
             className={`text-primary font-extrabold text-sm ${classes.category}`}
           >
@@ -30,7 +30,7 @@ const Article = ({
             {date}
           </span>
         </div>
-        <div className="flex items-center gap-1 desktop:gap-0.5">
+        <div className="flex items-center gap-1 desktop:gap-0.5 mobile:gap-1.5">
           <img
             className={`w-7 object-cover ${classes.picture}`}
             src={user.picture}
@@ -46,7 +46,7 @@ const Article = ({
           {title}
         </h3>
         <span
-          className={`p-2 tab:py-1 tab:px-1 text-xs ${
+          className={`p-2 tab:py-1 tab:px-1 mobile:p-2 text-xs ${
             status === "Created"
               ? "text-purple bg-createdBackground"
               : "text-published bg-publishedBackground"
@@ -69,10 +69,10 @@ const Article = ({
         ))}
       </div>
       <div className="w-full flex items-center justify-between gap-2">
-        <span className="flex-1 rounded-2xl text-center py-2 bg-viewBg text-purple cursor-pointer hover:text-viewBg hover:bg-purple desktop:text-sm tab:text-xs">
+        <span className="flex-1 rounded-2xl mobile:rounded-lg text-center py-2 bg-viewBg text-purple cursor-pointer hover:text-viewBg hover:bg-purple desktop:text-sm tab:text-xs mobile:text-lg">
           View
         </span>
-        <FaEllipsisVertical className="rotate-90 text-purple tab:text-sm" />
+        <FaEllipsisVertical className="rotate-90 text-purple tab:text-sm mobile:text-lg" />
       </div>
     </div>
   );
