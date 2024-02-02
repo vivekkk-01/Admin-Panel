@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <div className={`h-full ${classes.dashboard}`}>
       <Header />
-      <div className="flex flex-col gap-10 overflow-hidden my-5">
+      <div className="flex flex-col gap-10 overflow-hidden my-5 tab:px-3">
         <div className="flex flex-col gap-3 overflow-hidden">
           <h1 className="font-semibold text-4xl text-dark overflow-hidden">
             Hello Admin,

@@ -39,3 +39,21 @@
     font-size: 6px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .viewers {
+    font-size: 6px;
+  }
+  .title {
+    font-size: 9px;
+  }
+  .category {
+    font-size: 6px;
+  }
+  .status {
+    font-size: 6px;
+  }
+  .view {
+    font-size: 8px;
+  }
+}

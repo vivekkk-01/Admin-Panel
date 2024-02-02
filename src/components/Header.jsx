@@ -23,7 +23,7 @@ const Header = ({ storyPage }) => {
           {!isChange && <CiSearch className="absolute top-3.5 left-3" />}
           <input
             type="text"
-            className="outline-none border border-gray-300 rounded-2xl p-2"
+            className="outline-none border border-gray-300 rounded-2xl p-2 tab:hidden"
             onChange={({ target }) => {
               if (target.value.trim() === "") {
                 setIsChange(false);
@@ -34,7 +34,11 @@ const Header = ({ storyPage }) => {
           />
         </div>
       )}
-      <div className="flex items-center gap-6">
+      <div
+        className={`flex items-center gap-6 ${
+          !storyPage && "tab:w-full tab:gap-0 tab:justify-between"
+        }`}
+      >
         {!storyPage && (
           <div className="flex items-center gap-4 desktop:gap-2 p-3 px-4 desktop:px-2 border border-gray-400 rounded-xl">
             <span className="flex items-center gap-2 desktop:gap-1">
@@ -48,7 +52,7 @@ const Header = ({ storyPage }) => {
             </span>
           </div>
         )}
-        <div className="flex items-center gap-16 desktop:gap-5">
+        <div className="flex items-center gap-16 desktop:gap-5 ">
           <div className="flex items-center gap-2 desktop:gap-1">
             <img
               className="desktop:w-7 desktop:h-7 object-cover"

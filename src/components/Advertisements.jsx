@@ -7,7 +7,7 @@ const Advertisements = () => {
   return (
     <div className="flex flex-col gap-4">
       <MainHeader category={"Advertisement"} />
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 tab:gap-3">
         {advertisements.map(({ id, title, img, description }) => (
           <Advertisement
             key={id}

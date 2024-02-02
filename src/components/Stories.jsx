@@ -7,7 +7,7 @@ const Stories = () => {
   return (
     <div className="flex flex-col gap-4 desktop:gap-2">
       <MainHeader category={"Top Stories"} />
-      <div className="flex items-center gap-5 desktop:gap-3">
+      <div className="flex items-center gap-5 desktop:gap-3 tab:gap-1">
         {stories.map(({ id, title, storyImage, category, date, status }) => (
           <Story
             key={id}

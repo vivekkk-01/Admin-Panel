@@ -27,3 +27,34 @@
     font-size: 8px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .category {
+    font-size: 7px;
+  }
+  .date {
+    font-size: 5px;
+    line-height: 9px;
+  }
+  .picture {
+    width: 0.8rem;
+  }
+  .username {
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .title {
+    font-size: 7px;
+    line-height: 11px;
+  }
+  .status {
+    font-size: 6px;
+  }
+  .description {
+    line-height: 11px;
+    font-size: 7px;
+  }
+  .tag {
+    font-size: 6px;
+  }
+}

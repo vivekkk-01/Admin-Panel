@@ -1,0 +1,8 @@
+@media screen and (max-width: 800px) {
+  .description {
+    font-size: 8px;
+  }
+  .visit {
+    font-size: 10px;
+  }
+}

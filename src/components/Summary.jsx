@@ -15,7 +15,7 @@ const items = [
 
 const Summary = () => {
   return (
-    <div className="w-11/12">
+    <div className="w-11/12 tab:w-full">
       <ul className="flex items-center justify-around">
         {items.map((item) => (
           <li
@@ -23,10 +23,10 @@ const Summary = () => {
             className="flex items-center gap-5 desktop:gap-2"
           >
             {item.icon && (
-              <item.icon className="text-purple text-4xl desktop:text-2xl" />
+              <item.icon className="text-purple text-4xl desktop:text-2xl tab:text-xl" />
             )}
             <div className="flex flex-col gap-2 desktop:gap-0.5">
-              <h3 className="font-semibold text-2xl desktop:text-lg">
+              <h3 className="font-semibold text-2xl desktop:text-lg tab:text-sm">
                 {item.heading}
               </h3>
               <span

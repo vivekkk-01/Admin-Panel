@@ -7,3 +7,9 @@
     width: calc(100vw - 10rem);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .dashboard {
+    width: 100%;
+  }
+}
