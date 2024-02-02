@@ -1,49 +1,7 @@
 import React from "react";
 import MainHeader from "./MainHeader";
 import Story from "./Story";
-
-const stories = [
-  {
-    id: "story-1",
-    title: "How 7 lines code turned into $36 Billion Empire",
-    storyImage: "/story-img-1.jpg",
-    category: "BUSINESS",
-    date: "20 Sep 2022",
-    status: "Published",
-  },
-  {
-    id: "story-2",
-    title: "Chez pierre restaurant in Monte Carlo by Vuidafieri",
-    storyImage: "/story-img-2.png",
-    category: "BUSINESS",
-    date: "20 Sep 2022",
-    status: "Created",
-  },
-  {
-    id: "story-3",
-    title: "Teknion wins Gold at 2022 International Design Awards",
-    storyImage: "/story-img-3.jpg",
-    category: "POLITICS",
-    date: "20 Sep 2022",
-    status: "Draft",
-  },
-  {
-    id: "story-4",
-    title: "How 7 lines code turned into $36 Billion Empire",
-    storyImage: "/story-img-1.jpg",
-    category: "BUSINESS",
-    date: "20 Sep 2022",
-    status: "Published",
-  },
-  {
-    id: "story-5",
-    title: "Chez pierre restaurant in Monte Carlo by Vuidafieri",
-    storyImage: "/story-img-2.png",
-    category: "BUSINESS",
-    date: "20 Sep 2022",
-    status: "Created",
-  },
-];
+import { stories } from "@/data";
 
 const Stories = () => {
   return (
