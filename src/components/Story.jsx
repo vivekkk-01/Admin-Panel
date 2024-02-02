@@ -2,6 +2,7 @@ import React from "react";
 import { FaEye } from "react-icons/fa";
 import { MdOutlineInsertChartOutlined } from "react-icons/md";
 import { FaEllipsisVertical } from "react-icons/fa6";
+import Link from "next/link";
 
 const Story = ({ id, title, storyImage, category, date, status }) => {
   return (
@@ -49,9 +50,12 @@ const Story = ({ id, title, storyImage, category, date, status }) => {
           </span>
         </div>
         <div className="flex items-start w-11/12 gap-2">
-          <span className="flex-1 rounded-lg text-center py-2 bg-viewBg text-purple cursor-pointer hover:text-viewBg hover:bg-purple">
+          <Link
+            href={`/${id}`}
+            className="flex-1 rounded-lg text-center py-2 bg-viewBg text-purple cursor-pointer hover:text-viewBg hover:bg-purple"
+          >
             View
-          </span>
+          </Link>
           <span className="rounded-lg text-center p-2 bg-viewBg">
             <FaEllipsisVertical className="rotate-90 text-purple" size={23} />
           </span>
