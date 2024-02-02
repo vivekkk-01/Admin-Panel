@@ -13,3 +13,29 @@
   font-size: 15px;
   padding: 0.5rem;
 }
+
+.story {
+  width: 470px;
+}
+
+.category,
+.date,
+.status {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .viewers {
+    font-size: 9px;
+  }
+  .category {
+    font-size: 6px;
+  }
+  .date {
+    font-size: 5px;
+    line-height: 7px;
+  }
+  .status {
+    font-size: 6px;
+  }
+}

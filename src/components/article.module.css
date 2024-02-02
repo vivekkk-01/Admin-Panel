@@ -1,0 +1,29 @@
+@media screen and (max-width: 1200px) {
+  .category {
+    font-size: 9px;
+  }
+  .date {
+    font-size: 6px;
+  }
+  .picture {
+    width: 1.2rem;
+  }
+  .username {
+    font-size: 8px;
+    line-height: 13px;
+  }
+  .title {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .status {
+    font-size: 9px;
+  }
+  .description {
+    line-height: 13px;
+    font-size: 9px;
+  }
+  .tag {
+    font-size: 8px;
+  }
+}

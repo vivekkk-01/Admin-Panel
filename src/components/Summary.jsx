@@ -18,11 +18,23 @@ const Summary = () => {
     <div className="w-11/12">
       <ul className="flex items-center justify-around">
         {items.map((item) => (
-          <li key={item.heading} className="flex items-center gap-5">
-            {item.icon && <item.icon size={35} className="text-purple" />}
-            <div className="flex flex-col gap-2">
-              <h3 className="font-semibold text-2xl">{item.heading}</h3>
-              <span className="text-sm font-normal">{item.updates} New Updates</span>
+          <li
+            key={item.heading}
+            className="flex items-center gap-5 desktop:gap-2"
+          >
+            {item.icon && (
+              <item.icon className="text-purple text-4xl desktop:text-2xl" />
+            )}
+            <div className="flex flex-col gap-2 desktop:gap-0.5">
+              <h3 className="font-semibold text-2xl desktop:text-lg">
+                {item.heading}
+              </h3>
+              <span
+                className="text-sm desktop:text-xs
+               font-normal"
+              >
+                {item.updates} New Updates
+              </span>
             </div>
           </li>
         ))}

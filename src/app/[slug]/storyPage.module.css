@@ -26,3 +26,16 @@
   right: 25%;
   z-index: 40;
 }
+
+@media screen and (max-width: 1200px) {
+  .story_page {
+    width: calc(100vw - 10rem);
+  }
+  .left_arrow {
+    left: 10%;
+  }
+
+  .right_arrow {
+    right: 12%;
+  }
+}
