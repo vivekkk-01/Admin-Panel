@@ -17,7 +17,7 @@ const Article = ({
       <img
         className="w-full object-cover rounded-2xl"
         src={articleImage}
-        alt=""
+        alt="Article Image"
       />
       <div className="w-full mobile:w-80 flex items-center justify-between">
         <div className="flex items-center gap-1 desktop:gap-0.5 mobile:gap-1.5">
@@ -34,7 +34,7 @@ const Article = ({
           <img
             className={`w-7 object-cover ${classes.picture}`}
             src={user.picture}
-            alt=""
+            alt="User Picture"
           />
           <span className={`font-bold text-xs ${classes.username}`}>
             {user.username}

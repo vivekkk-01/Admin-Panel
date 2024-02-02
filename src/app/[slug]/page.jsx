@@ -40,7 +40,7 @@ const StoryPage = ({ params }) => {
           <div
             className={`absolute top-0 mobile:w-10/12 h-full z-40 ${classes.story_img}`}
           >
-            <img src={story?.storyImage} className="h-full" alt="" />
+            <img src={story?.storyImage} className="h-full" alt="Story Image" />
             <div className="absolute bottom-5 flex flex-col gap-2 items-start mx-3">
               <h1 className="text-white font-bold text-3xl desktop:text-2xl tab:text-xl mobile:text-lg">
                 {story?.title}

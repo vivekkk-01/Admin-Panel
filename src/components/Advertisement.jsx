@@ -8,7 +8,7 @@ const Advertisement = ({ id, title, description, img }) => {
       <img
         className="object-cover h-full w-7/12 desktop:w-10/12 tab:w-full mobile:w-7/12"
         src={img}
-        alt=""
+        alt="Advertisement Image"
       />
       <div className="flex flex-col justify-center items-center gap-2 desktop:gap-1 mobile:gap-2 px-4 desktop:px-2 tab:px-1 mobile:px-4">
         <h2 className="text-text text-lg desktop:text-sm tab:text-xs mobile:text-lg font-semibold self-start">

@@ -62,7 +62,7 @@ const Header = ({ storyPage }) => {
             <img
               className="desktop:w-7 desktop:h-7 object-cover"
               src="/user-profile.jpg"
-              alt=""
+              alt="User Profile"
             />
             <div className="flex flex-col justify-center">
               <span className="text-xs">Welcome back</span>

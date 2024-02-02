@@ -9,7 +9,7 @@ const StoryPageDescription = ({ story }) => {
         <img
           src={"/man-2.jpg"}
           className="h-9 w-9 desktop:h-7 desktop:w-7 tab:h-5 tab:w-5 object-cover"
-          alt=""
+          alt="Man"
         />
         <span className="text-grey font-semibold text-xl desktop:text-lg tab:text-sm mobile:text-xs">
           James Robert
