@@ -26,11 +26,11 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
-    <aside className="w-72 h-full flex flex-col items-center justify-between pt-10">
-      <ul className="flex flex-col gap-1">
+    <aside className="w-72 h-full flex flex-col items-center justify-between pt-10 overflow-hidden sticky left-0 top-0">
+      <ul className="flex flex-col gap-1  overflow-hidden">
         {menuItems.map((item) => (
           <li
-            className={`cursor-pointer w-52 p-4 flex items-center gap-4 rounded-xl ${
+            className={`cursor-pointer w-52 p-4 flex items-center gap-4 rounded-xl  overflow-hidden ${
               item.heading === "Content" && classes.active
             } ${classes.listItem}`}
             key={item.heading}
@@ -42,7 +42,7 @@ const Sidebar = () => {
         ))}
       </ul>
       <span
-        className={`cursor-pointer w-52 p-4 flex items-center gap-4 rounded-xl ${classes.listItem} mb-10`}
+        className={`cursor-pointer w-52 p-4 flex items-center gap-4 rounded-xl ${classes.listItem} mb-10  overflow-hidden`}
       >
         <TfiHeadphoneAlt size={20} />
         Contact Support

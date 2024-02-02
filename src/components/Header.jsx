@@ -6,7 +6,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Header = () => {
   return (
-    <header className="w-full h-32 px-10 flex items-center justify-between">
+    <header className="w-full h-32 px-10 flex items-center justify-between sticky top-0 bg-white z-50">
       <div className="relative">
         <CiSearch className="absolute top-3.5 left-3" />
         <input
